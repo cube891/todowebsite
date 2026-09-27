@@ -4,5 +4,4 @@ function load() {
     document.getElementById("KIM").innerHTML = localStorage.getItem("KIM");
     document.getElementById("projects").innerHTML = localStorage.getItem("projects");
     document.getElementById("urgent").innerHTML = localStorage.getItem("urgent");
-    window.alert("loading got triggered");
 }
