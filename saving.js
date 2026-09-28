@@ -9,13 +9,17 @@ function UpdateSave() {
 
 document.addEventListener("keydown", function CheckForSaving(event) {
   if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "s") {
-    event.preventDefault()
-    window.alert("saved")
-    UpdateSave()
+    event.preventDefault();
+    window.alert("saved");
+    UpdateSave();
   }
   if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "d") {
-    event.preventDefault()
-    window.open("doc.html", "_blank")
+    event.preventDefault();
+    window.open("doc.html", "_blank");
+  }
+  if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "t") {
+    event.preventDefault();
+    window.alert("tested and updated, saving.js is up and functional")
   }
 });
 
