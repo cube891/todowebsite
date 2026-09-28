@@ -13,6 +13,10 @@ document.addEventListener("keydown", function CheckForSaving(event) {
     window.alert("saved")
     UpdateSave()
   }
+  if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "d") {
+    event.preventDefault()
+    window.open("doc.html", "_blank")
+  }
 });
 
 document.addEventListener('visibilitychange', function CheckForClosing() {
